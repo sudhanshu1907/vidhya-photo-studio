@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidhya Photo Stuido</title>
+  <link rel="icon" type="image/x-icon" href="public/Icon - Copy.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home"><h1 class="logo">Vidhya Photo Studio</h1></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="slideshow" id="slideshow"></div>
+    <div class="hero-content animate-fade-in">
+      <h1 class="animate-slide-up">Capturing Your Perfect Moments</h1>
+      <p class="animate-slide-up delay-1">Professional wedding photography that tells your unique love story</p>
+      <a href="#pricing"><button class="cta-button animate-slide-up delay-2">Book Now</button></a>
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Our Portfolio</h2>
+      <div class="gallery" id="gallery"></div>
+    </div>
+    <a href="portfoilio.html"><button class="btn-new">View Full Portfolio</button></a>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <button class="close-button">&times;</button>
+    <button class="nav-button prev">&lt;</button>
+    <button class="nav-button next">&gt;</button>
+    <div class="lightbox-content"></div>
+  </div>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2>Booking Plans</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Essential</h3>
+          <p class="price">₹20,499</p>
+          <ul>
+            <li>6 Hours Coverage</li>
+            <li>1 Photographer</li>
+            <li>200+ Digital Photos</li>
+            <li>Online Gallery</li>
+            <li>Basic Photo Editing</li>
+            <li>Print Release</li>
+          </ul>
+          <button class="book-button">Book Now</button>
+        </div>
+        <div class="pricing-card featured">
+          <h3>Premium</h3>
+          <p class="price">₹30,499</p>
+          <ul>
+            <li>8 Hours Coverage</li>
+            <li>2 Photographers</li>
+            <li>400+ Digital Photos</li>
+            <li>Online Gallery</li>
+            <li>Advanced Photo Editing</li>
+            <li>Print Release</li>
+            <li>Engagement Session</li>
+            <li>Wedding Album (20 pages)</li>
+          </ul>
+          <button class="book-button">Book Now</button>
+        </div>
+        <div class="pricing-card">
+          <h3>Luxury</h3>
+          <p class="price">₹50,999</p>
+          <ul>
+            <li>Full Day Coverage</li>
+            <li>2 Photographers</li>
+            <li>600+ Digital Photos</li>
+            <li>Online Gallery</li>
+            <li>Premium Photo Editing</li>
+            <li>Print Release</li>
+            <li>Engagement Session</li>
+            <li>Wedding Album (40 pages)</li>
+            <li>Parent Albums</li>
+            <li>Drone Coverage</li>
+          </ul>
+          <button class="book-button">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team-section">
+    <div class="contact-div">
+      <div class="owner-image">
+        <img src="public/IMG_1359.png" alt="Owner Image">
+      </div>
+      <div class="studio-details">
+        <h2>Mahesh Kumar</h2>
+        <p><strong>Experience:</strong> 30+ Years of Experience, Deliver Happiness To Many Happy Clients.</p>
+        <p><strong>Address:</strong> E-Block, Shop No. 17, DDA Market, Sultanpuri, New Delhi, 110086.</p>
+        <p><strong>Email:</strong> maheshkumar1962@gmail.com</p>
+        <p><strong>Phone:</strong> 9345055748, 9315152512</p>
+      </div>
+    </div>
+
+    <h2 class="team-heading">OUR TEAM</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="public/Unkown.jpg" alt="Team Member">
+        <h3>Ravi Sharma</h3>
+        <p>Senior Photographer</p>
+      </div>
+      <div class="team-card">
+        <img src="public/Unkown.jpg" alt="Team Member">
+        <h3>Anjali Verma</h3>
+        <p>Graphic Designer</p>
+      </div>
+      <div class="team-card">
+        <img src="public/Unkown.jpg" alt="Team Member">
+        <h3>Amit Yadav</h3>
+        <p>Video Editor</p>
+      </div>
+      <div class="team-card">
+        <img src="public/Unkown.jpg" alt="Team Member">
+        <h3>Priya Singh</h3>
+        <p>Assistant Photographer</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" required>
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" required>
+                <option value="">Select Package</option>
+                <option value="essential">Essential - ₹20,499</option>
+                <option value="premium">Premium - ₹30,499</option>
+                <option value="luxury">Luxury - ₹50,999</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+        <div class="map-container">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1348.8975097598538!2d77.070602!3d28.694367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0425cdb2548b%3A0xd0ff551ffdd7b23d!2z4KS14KS_4KSm4KWN4KSv4KS-IOCkq-Cli-Ckn-CliyDgpLjgpY3gpJ_gpYLgpKHgpL_gpK_gpYs!5e1!3m2!1sen!2sin!4v1738422876450!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              9354055748, 9891678005
+            </p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              maheshkumar1962@gmail.com
+            </p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              E Block, Shop No.17 DDA Market, Sultanpuri, New Delhi 110086
+            </p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="www.instagram.com" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="www.facebook.com" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="www.X.com" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Vidhya Photo Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
